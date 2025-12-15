@@ -1,0 +1,31 @@
+{
+  "name": "glycam_molstar",
+  "version": "1.0.0",
+  "description": "Molstar customized for GlycamWeb",
+  "main": "glycam_molstar.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node build.js",
+    "build_ui": "node build_ui.js",
+    "build_cb": "node build_cb.js",
+    "build_gp": "node build_gp.js",
+    "build_cb_ui": "node build_cb_ui.js",
+    "build_gp_ui": "node build_gp_ui.js",
+    "css": "sass src/style.scss ./build/css/style.css"
+  },
+  "keywords": [
+    "glycam",
+    "molstar"
+  ],
+  "author": "Dan Wentworth",
+  "license": "ISC",
+  "dependencies": {
+    "molstar": "^4.8.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "esbuild": "^0.24.0",
+    "sass": "^1.83.0"
+  }
+}

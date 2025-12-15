@@ -1,0 +1,17 @@
+# Dependencies
+/node_modules
+
+# Build artifacts (TypeScript/JavaScript output)
+/dist
+/build
+*.js
+*.js.map # Source maps
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment
+.env
+.DS_Store
