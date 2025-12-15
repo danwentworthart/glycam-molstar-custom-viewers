@@ -1,6 +1,46 @@
 This module uses typescript. 
 
-Before building, you currently need to tell nvm to use the correct version (note that "nvm" is not "npm" or a type):
+Initial installation
+To set up an environment for this repo, you will need to install Node.js
+```
+nvm install v21.0.0
+nvm use v21.0.0
+nvm install
+```
+
+Dependencies
+- molstar: 4.8.0 
+- react: 18.3.1
+- react-Dom: 18.3.1
+
+These should be updatable with commands such as:
+```
+npm update molstar
+```
+But there is a version defined in package.json that will hold it in a version range.
+
+You can get the absolute latest, and ignore the version range with:
+```
+npm install molstar@latest
+```
+
+or specify a version:
+```
+npm install molstar@4.9.0
+```
+
+May be able to check for new versions with:
+```
+npm view molstar versions
+```
+
+And finally, you can ask which node modules are outdated in your project with:
+```
+npm outdated
+```
+
+Day to day editing
+Before building, you currently need to tell nvm to use the correct version (note that "nvm" is not "npm" or a type-o):
     nvm use v21.0.0
 
 Make edits to the *.tsx or *.ts file you intend to use.
@@ -21,7 +61,7 @@ Watch has not been working correctly, so the current workflow is:
 1. Make edits in the src dir as shown above 
 2. (Optional: only if you need to be cache-busting) Update the version number in package.json when you are ready to test in the website.
 3. Compile as shown above
-4. Copy the compiled build/js/glycam_molstar_${version}.js to the following path, or wherever the destination devEnv is:
+4. Copy the compiled build/js/glycam_molstar_${version}.js to one of the paths below, or wherever the destination devEnv's static dir is:
 5. (Optional: only if you need to be cache-busting) Update the filename in whatever html files load this js file. 
     Match the version numbers.
 
