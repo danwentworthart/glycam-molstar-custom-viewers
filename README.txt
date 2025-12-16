@@ -1,7 +1,7 @@
 This module uses typescript. 
 
 Initial installation
-To set up an environment for this repo, you will need to install Node.js. Versions listed here are likely stale by now.
+To set up an environment for this repo, you will need to install Node.js. Versions listed here did work, but are likely stale by now.
 
     nvm install v21.0.0 
     nvm use v21.0.0
@@ -40,7 +40,7 @@ And finally, you can ask which node modules are outdated in your project with:
 
 
 Day to day editing
-Before building, you currently need to tell nvm to use the correct version (note that "nvm" is not "npm" or a type-o):
+Before building, you currently need to tell nvm to use the correct version:
 
     nvm use v21.0.0
 
@@ -59,7 +59,7 @@ Note:
 - If the commands fail, check to see if that file was edited.
 - The "scripts" field in package.json lists what you can build.
 
-Watch has not been working correctly, so the current workflow is:
+Watch script has not been working correctly, so the current workflow is:
 
 1. Make edits in the src dir as shown above 
 2. (Optional: only if you need to be cache-busting) Update the version number in package.json when you are ready to test in the website.
