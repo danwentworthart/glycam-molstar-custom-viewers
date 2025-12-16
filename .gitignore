@@ -15,3 +15,7 @@ yarn-error.log*
 # Environment
 .env
 .DS_Store
+
+# Track these
+!build*.js
+!watch*.js
