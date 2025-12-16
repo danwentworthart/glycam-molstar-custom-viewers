@@ -1,9 +1,9 @@
 This module uses typescript. 
 
 Initial installation
-To set up an environment for this repo, you will need to install Node.js
+To set up an environment for this repo, you will need to install Node.js. Versions listed here are likely stale by now.
 
-    nvm install v21.0.0
+    nvm install v21.0.0 
     nvm use v21.0.0
     nvm install
 
